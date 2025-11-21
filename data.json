@@ -1,0 +1,286 @@
+{
+  "last_user_id": 6,
+  "usuarios": [
+    {
+      "user_id": "dbu-001",
+      "nombre": "Demo",
+      "apellido": "Usuario",
+      "username": "demo@gmail.com",
+      "email": "demo@gmail.com",
+      "password": "demo",
+      "nivel": 1,
+      "gotas_agua": 0,
+      "perlas": 0,
+      "rol": "player",
+      "ultimo_acceso": "2025-01-15T10:30:00.000Z",
+      "arrecife_items": []
+    },
+    {
+      "user_id": "dbu-002",
+      "nombre": "Admin",
+      "apellido": "DeepBlue",
+      "username": "admin@gmail.com",
+      "email": "admin@gmail.com",
+      "password": "deepblue",
+      "nivel": 99,
+      "gotas_agua": 999999,
+      "perlas": 999,
+      "rol": "admin",
+      "ultimo_acceso": "2025-11-20T18:04:32.520Z",
+      "arrecife_items": [],
+      "session_token": "41fba64b-a7a5-417a-aea8-ab5e083bfedc"
+    },
+    {
+      "user_id": "dbu-003",
+      "nombre": "Hola",
+      "apellido": "Mundo",
+      "username": "hola@gmail.com",
+      "email": "hola@gmail.com",
+      "password": "hola",
+      "nivel": 1.5,
+      "gotas_agua": 5.25,
+      "perlas": 1,
+      "rol": "player",
+      "ultimo_acceso": "2025-11-20T18:05:12.536Z",
+      "arrecife_items": [
+        {
+          "id": "coral-1763530339359",
+          "tipo": "coral",
+          "nombre": "Coral Brillante",
+          "image": "/img/coral.jpg",
+          "pos_x": 72.8609612665025,
+          "pos_y": 22.155259985566595
+        },
+        {
+          "id": "alga-1763531338823",
+          "tipo": "alga",
+          "nombre": "Alga Energética",
+          "image": "/img/alga.avif",
+          "pos_x": 22.01329089260537,
+          "pos_y": 16.769513532606712
+        }
+      ],
+      "referrals": [
+        {
+          "user_id": "dbu-005",
+          "username": "sas@gmail.com",
+          "earned": 7.5,
+          "date": "2025-11-19T05:56:09.800Z"
+        },
+        {
+          "user_id": "dbu-005",
+          "username": "sas@gmail.com",
+          "earned": 2.25,
+          "date": "2025-11-19T07:29:42.036Z"
+        },
+        {
+          "user_id": "dbu-005",
+          "username": "sas@gmail.com",
+          "earned": 7.5,
+          "date": "2025-11-19T07:43:58.448Z"
+        },
+        {
+          "user_id": "dbu-005",
+          "username": "sas@gmail.com",
+          "earned": 3,
+          "date": "2025-11-19T15:58:21.165Z"
+        }
+      ],
+      "fondos": [
+        {
+          "id": "fund-1763540809763",
+          "amount": 15,
+          "daily_rate": 4.5,
+          "days": 45,
+          "start_date": "2025-11-19T08:26:49.763Z",
+          "end_date": "2026-01-03T08:26:49.763Z",
+          "expected_total": 30.375
+        }
+      ],
+      "session_token": "2c317221-adb5-49e1-af8d-e330b76aa62a"
+    },
+    {
+      "user_id": "dbu-004",
+      "nombre": "Koala",
+      "apellido": "Test",
+      "username": "koala@gmail.com",
+      "email": "koala@gmail.com",
+      "password": "koala",
+      "nivel": 1,
+      "gotas_agua": 0,
+      "perlas": 0,
+      "rol": "player",
+      "ultimo_acceso": "2025-11-18T23:42:34.214Z",
+      "arrecife_items": []
+    },
+    {
+      "user_id": "dbu-005",
+      "nombre": "xddd",
+      "apellido": "sas",
+      "username": "sas@gmail.com",
+      "email": "sas@gmail.com",
+      "password": "sas",
+      "nivel": 1,
+      "gotas_agua": 35,
+      "perlas": 1,
+      "rol": "player",
+      "ultimo_acceso": "2025-11-19T16:11:49.191Z",
+      "arrecife_items": [
+        {
+          "id": "coral-1763531803557",
+          "tipo": "coral",
+          "nombre": "Coral Brillante",
+          "image": "/img/coral.jpg",
+          "pos_x": 20.035459487183218,
+          "pos_y": 39.71514661679997
+        }
+      ],
+      "referred_by": "dbu-003",
+      "referrals": [],
+      "fondos": [
+        {
+          "id": "fund-1763537423712",
+          "amount": 15,
+          "daily_rate": 4.5,
+          "days": 45,
+          "start_date": "2025-11-19T07:30:23.712Z",
+          "end_date": "2026-01-03T07:30:23.712Z",
+          "expected_total": 30.375
+        },
+        {
+          "id": "fund-1763538310090",
+          "amount": 15,
+          "daily_rate": 4.5,
+          "days": 45,
+          "start_date": "2025-11-19T07:45:10.090Z",
+          "end_date": "2026-01-03T07:45:10.090Z",
+          "expected_total": 30.375
+        }
+      ]
+    },
+    {
+      "user_id": "dbu-006",
+      "nombre": "SOL",
+      "apellido": "XDD",
+      "username": "sol@gmail.com",
+      "email": "sol@gmail.com",
+      "password": "sol",
+      "nivel": 1,
+      "gotas_agua": 0,
+      "perlas": 0,
+      "rol": "player",
+      "ultimo_acceso": "2025-11-19T15:41:11.360Z",
+      "arrecife_items": [],
+      "referred_by": "dbu-005",
+      "referrals": []
+    }
+  ],
+  "recharges": [
+    {
+      "id": "req-1763567856883",
+      "userId": "dbu-005",
+      "item": "coral",
+      "network": "trx",
+      "address": "TXxExampleTrxAddress1234567890",
+      "amount": 20,
+      "note": "cfecd",
+      "fileName": "78a59a81-df79-4e20-bdfe-ceb6de99d5ea.jpeg",
+      "status": "approved",
+      "created_at": "2025-11-19T15:57:36.883Z"
+    },
+    {
+      "id": "req-1763538204856",
+      "userId": "dbu-005",
+      "item": "gotas",
+      "network": "trc20-usdt",
+      "address": "TVApTWqBze3v6KpF5KhmjiMSdbWWWvHFvxL",
+      "amount": 50,
+      "note": "XEX",
+      "fileName": "1e0f4731-943b-43d0-aeea-8eb05f0c916e.jpeg",
+      "status": "approved",
+      "created_at": "2025-11-19T07:43:24.856Z"
+    },
+    {
+      "id": "req-1763537344655",
+      "userId": "dbu-005",
+      "item": "gotas",
+      "network": "trc20-usdt",
+      "address": "TVApTWqBze3v6KpF5KhmjiMSdbWWWvHFvxL",
+      "amount": 15,
+      "note": "holA",
+      "fileName": "947e5ca0-d4e1-4641-9885-ac83185c2ff8.jpeg",
+      "status": "approved",
+      "created_at": "2025-11-19T07:29:04.655Z"
+    },
+    {
+      "id": "req-1763531733730",
+      "userId": "dbu-005",
+      "item": "coral",
+      "network": "trc20-usdt",
+      "address": "TVApTWqBze3v6KpF5KhmjiMSdbWWWvHFvxL",
+      "amount": 50,
+      "note": "hola",
+      "fileName": "03d952a4-1e3b-419c-ae24-3be524842f5f.jpg",
+      "status": "approved",
+      "created_at": "2025-11-19T05:55:33.730Z"
+    },
+    {
+      "id": "req-1763530432247",
+      "userId": "dbu-003",
+      "item": "alga",
+      "network": "trc20-usdt",
+      "address": "TVApTWqBze3v6KpF5KhmjiMSdbWWWvHFvxL",
+      "amount": 90,
+      "note": "hola",
+      "fileName": "31421cc2-5172-46e7-9f95-2b434f79bb6b.jpeg",
+      "status": "approved",
+      "created_at": "2025-11-19T05:33:52.247Z"
+    },
+    {
+      "id": "req-1763509315898",
+      "userId": "dbu-004",
+      "item": "alga",
+      "network": "trc20-usdt",
+      "address": "TVApTWqBze3v6KpF5KhmjiMSdbWWWvHFvxL",
+      "amount": 90,
+      "note": "hola",
+      "fileName": "5b338add-447a-4c5b-9c32-a8aad5c17376.png",
+      "status": "denied",
+      "created_at": "2025-11-18T23:41:55.898Z"
+    },
+    {
+      "id": "req-1763508771202",
+      "userId": "dbu-003",
+      "item": "coral",
+      "network": "trc20-usdt",
+      "address": "TVApTWqBze3v6KpF5KhmjiMSdbWWWvHFvxL",
+      "amount": 50,
+      "note": "hola",
+      "fileName": "678bbe77-359a-4af7-8544-15bf0c08bf54.png",
+      "status": "approved",
+      "created_at": "2025-11-18T23:32:51.202Z"
+    }
+  ],
+  "withdrawals": [
+    {
+      "id": "wd-1763539794761",
+      "userId": "dbu-005",
+      "network": "trc20-usdt",
+      "address": "wxwwsx",
+      "amount": 20,
+      "note": "xwcxwec",
+      "status": "approved",
+      "created_at": "2025-11-19T08:09:54.761Z"
+    },
+    {
+      "id": "wd-1763536411972",
+      "userId": "dbu-005",
+      "network": "trc20-usdt",
+      "address": "dwndxkwnxl",
+      "amount": 20,
+      "note": "xd",
+      "status": "approved",
+      "created_at": "2025-11-19T07:13:31.972Z"
+    }
+  ]
+}
