@@ -81,6 +81,16 @@ app.post('/api/register', async (req, res) => {
     const count = await prisma.user.count();
     const newCode = `dbu-${String(count + 1).padStart(3, '0')}`;
 
+    let referrerId = null;
+    if (referredBy) {
+      const referrer = await prisma.user.findFirst({
+        where: { code: referredBy }
+      });
+      if (referrer) {
+        referrerId = referrer.id;
+      }
+    }
+
     const newUser = await prisma.user.create({
       data: {
         code: newCode,
@@ -95,7 +105,7 @@ app.post('/api/register', async (req, res) => {
         rol: 'player',
         ultimoAcceso: new Date(),
         arrecifeItems: [],
-        referredById: referredBy || null,
+        referredById: referrerId,
       },
     });
 
