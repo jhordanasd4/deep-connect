@@ -358,14 +358,20 @@ app.post('/api/recharges/:id/approve', async (req, res) => {
       // Sistema de referidos: 15% al que refirió
       if (rec.user.referredById) {
         const bonus = amount * 0.15;
-        const referrer = await tx.user.update({
-          where: { id: rec.user.referredById },
-          data: {
-            gotasAgua: (new Prisma.Decimal(referrer.gotasAgua || 0)).add(new Prisma.Decimal(bonus)),
-          },
-        }).catch(async () => {
-          // si por alguna razón el referrer desaparece, ignorar
+        // 1. Primero, busca al referente de forma segura
+        const referrer = await tx.user.findUnique({
+          where: { id: rec.user.referredById }
         });
+
+        // 2. Si el referente existe, actualiza su saldo
+        if (referrer) {
+          // Usamos new Prisma.Decimal para asegurar que la suma sea correcta
+          const currentGotas = new Prisma.Decimal(referrer.gotasAgua || 0);
+          await tx.user.update({
+            where: { id: rec.user.referredById },
+            data: { gotasAgua: currentGotas.add(new Prisma.Decimal(bonus)) },
+          });
+        }
 
         await tx.referral.create({
           data: {
@@ -662,6 +668,9 @@ app.post('/api/withdrawals/:id/deny', async (req, res) => {
     const rec = await prisma.withdrawal.findUnique({ where: { id }, include: { user: true } });
     if (!rec) return res.status(404).json({ success: false, message: 'Solicitud no encontrada' });
     if (rec.status !== 'pending') return res.status(400).json({ success: false, message: 'Solicitud ya procesada' });
+
+    // Es buena práctica verificar que el usuario aún existe
+    if (!rec.user) return res.status(404).json({ success: false, message: 'El usuario asociado a este retiro ya no existe.' });
 
     await prisma.$transaction(async (tx) => {
       await tx.withdrawal.update({
